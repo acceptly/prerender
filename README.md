@@ -76,7 +76,7 @@ If you are trying to test Prerender with your website on localhost, you'll have 
 
 If you are running the prerender service locally. Make sure you set your middleware to point to your local Prerender server with:
 
-`export PRERENDER_SERVICE_URL=http://localhost:3000` 
+`export PRERENDER_SERVICE_URL=http://localhost:3000`
 
 	$ git clone https://github.com/prerender/prerender.git
 	$ cd prerender
@@ -93,7 +93,7 @@ Keep in mind you will see 504s for relative URLs because the actual domain on th
 	$ cd prerender
 	$ heroku create
 	$ git push heroku master
-	
+
 >If you are installing Prerender under a Windows environment and you encounter errors related to 'node-gyp', you may need to follow these additional steps:
 >https://github.com/nodejs/node-gyp#installation
 
@@ -370,7 +370,7 @@ so that you don't need to export your AWS credentials.
 > You can also export the S3_PREFIX_KEY variable so that the key (which is by default the complete requested URL) is
 prefixed. This is useful if you want to organize the snapshots in the same bucket.
 
-#### Region 
+#### Region
 
 
 By default, s3HtmlCache works with the US Standard region (East), if your bucket is localized in another region you can config it with an environment variable : `AWS_REGION`.
